@@ -9,7 +9,14 @@ This project demonstrates how to learn a probability density function (PDF) from
 - **Feature Used:** NO₂  
 
 ##  Step 1: Non-Linear Transformation
-Each NO₂ value (*x*) is transformed into a new variable (*z*) using:
+In this step, each value of the NO₂ feature (denoted as *x*) is transformed into a new variable *z* using a roll-number-parameterized non-linear transformation function.
+
+The transformation function is defined as:
+
+Tᵣ(x) = x + aᵣ sin(bᵣ x)
+
+Thus, the transformed variable is given by:
+z = Tᵣ(x)
 Where:
 - `a_r = 0.05 × (r mod 7)`
 - `b_r = 0.3 × (r mod 5 + 1)`
@@ -21,8 +28,8 @@ The parameters are estimated using Maximum Likelihood Estimation (MLE):
 
 - **μ (Mean):** Mean of transformed values  
 - **σ (Standard Deviation):** Standard deviation of transformed values  
-- **λ =** `1 / (2σ²)`  
-- **c =** `1 / √(2πσ²)`
+- **λ =** `1 / (2σ^2)`  
+- **c =** `1 / sqrt(2πσ^2)`
 
 ##  Results
 The learned parameters of the probability density function are shown below:
