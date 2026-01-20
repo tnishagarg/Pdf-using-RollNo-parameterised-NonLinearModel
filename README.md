@@ -29,21 +29,7 @@ The learned parameters of the probability density function are shown below:
 
 | Parameter | Value |
 |---------|--------|
-| Lambda (λ) | 0.003405 |
-| Mu (μ) | 21.465643 |
-| c | 0.032920 |
+| Lambda (λ) | 0.0034046895152237 |
+| Mu (μ) | 21.46564312301054 |
+| c | 0.032920302733753855 |
 
-## 📈 Visualization
-A histogram of the transformed values (*z*) is plotted along with the learned PDF curve to validate the model fit.
-
-## 🛠 Tools & Libraries
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Google Colab  
-
-## 🚀 How to Run
-1. Upload `data.csv` to Google Colab.  
-2. Replace `YOUR_ROLL_NUMBER` in the notebook with your university roll number.  
-3. Run all cells to generate the results and plots.
