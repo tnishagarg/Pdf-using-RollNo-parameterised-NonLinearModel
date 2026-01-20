@@ -13,7 +13,7 @@ In this step, each value of the NO2 feature (denoted as *x*) is transformed into
 
 The transformation function is defined as:
 
-T_r(x) = x + a_r × sin(b_r × x)
+T_r(x) = x + a_r * sin(b_r * x)
 
 Thus, the transformed variable is given by:
 z = T_r(x)
