@@ -25,7 +25,13 @@ The parameters are estimated using Maximum Likelihood Estimation (MLE):
 - **c =** `1 / √(2πσ²)`
 
 ## 📊 Results
-The parameters **λ**, **μ**, and **c** are automatically computed from the transformed data.
+The learned parameters of the probability density function are shown below:
+
+| Parameter | Value |
+|---------|--------|
+| Lambda (λ) | 0.003405 |
+| Mu (μ) | 21.465643 |
+| c | 0.032920 |
 
 ## 📈 Visualization
 A histogram of the transformed values (*z*) is plotted along with the learned PDF curve to validate the model fit.
