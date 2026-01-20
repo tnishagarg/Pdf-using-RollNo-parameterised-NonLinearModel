@@ -1,21 +1,21 @@
 # Probability Density Function Learning Using Roll-Number-Based Non-Linear Transformation
 
-## 📌 Overview
+##  Overview
 This project demonstrates how to learn a probability density function (PDF) from air quality data using a roll-number-parameterized non-linear transformation. The approach combines statistical modeling with controlled non-linearity.
 
-## 📊 Dataset
+##  Dataset
 - **Name:** India Air Quality Data  
 - **Source:** https://www.kaggle.com/datasets/shrutibhargava94/india-air-quality-data  
 - **Feature Used:** NO₂  
 
-## 🔁 Step 1: Non-Linear Transformation
+##  Step 1: Non-Linear Transformation
 Each NO₂ value (*x*) is transformed into a new variable (*z*) using:
 Where:
 - `a_r = 0.05 × (r mod 7)`
 - `b_r = 0.3 × (r mod 5 + 1)`
 - `r` is the university roll number
 
-## 📐 Step 2: Probability Density Learning
+##  Step 2: Probability Density Learning
 The transformed variable (*z*) is modeled using a Gaussian-shaped PDF:
 The parameters are estimated using Maximum Likelihood Estimation (MLE):
 
@@ -24,7 +24,7 @@ The parameters are estimated using Maximum Likelihood Estimation (MLE):
 - **λ =** `1 / (2σ²)`  
 - **c =** `1 / √(2πσ²)`
 
-## 📊 Results
+##  Results
 The learned parameters of the probability density function are shown below:
 
 | Parameter | Value |
